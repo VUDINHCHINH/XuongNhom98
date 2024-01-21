@@ -12,10 +12,10 @@ include "model/binhluan.php";
 ///ảnh lên home
 include "global.php";
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
-$sanpham = loadall_sanpham_home();
-$dsdm = loadall_danhmuc();
-$dstop10 = loadall_sanpham_top10();
-$dstop02 = loadall_sanpham_top02();
+// $sanpham = loadall_sanpham_home();
+// $dsdm = loadall_danhmuc();
+// $dstop10 = loadall_sanpham_top10();
+// $dstop02 = loadall_sanpham_top02();
 include "view/header.php";
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
@@ -149,8 +149,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             } else {
                 $iddm = 0;
             }
-            $dssp = loadall_sanpham($kyw, $iddm);
-            $tendm = load_ten_dm($iddm);
+            // $dssp = loadall_sanpham($kyw, $iddm);
+            // $tendm = load_ten_dm($iddm);
             include "view/sanpham.php";
             break;
 
@@ -171,9 +171,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             }
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $id = $_GET['idsp'];
-                $onesp = loadone_sanpham($id);
+                // $onesp = loadone_sanpham($id);
                 extract($onesp);
-                $sp_cung_loai = load_sanpham_cungloai($id, $iddm);
+                // $sp_cung_loai = load_sanpham_cungloai($id, $iddm);
                 $loadone_binhluan = loadone_binhluan($_GET['idsp']);
             }
 
@@ -187,7 +187,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $email = $_POST['email'];
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
-                insert_taikhoan($email, $user, $pass);
+                // insert_taikhoan($email, $user, $pass);
                 $thongbao = "Đã đăng ký thành công.Vui lòng đăng nhập để thực hiện chức năng bình luận hoặc đặt hàng ";
             }
             include "view/taikhoan/dangky.php";
@@ -197,7 +197,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
-                $checkuser = checkuser($user, $pass);
+                // $checkuser = checkuser($user, $pass);
                 if (is_array($checkuser)) {
                     $_SESSION['user'] = $checkuser;
                     // $_SESSION['pass'] = $checkuser;
@@ -217,8 +217,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $address = $_POST['address'];
                 $tel = $_POST['tel'];
                 $id = $_POST['id'];
-                update_taikhoan($id, $user, $pass, $email, $address, $tel);
-                $_SESSION['user'] = checkuser($user, $pass);
+                // update_taikhoan($id, $user, $pass, $email, $address, $tel);
+                // $_SESSION['user'] = checkuser($user, $pass);
 
                 header('Location: index.php?act=edit_taikhoan');
             }
@@ -227,7 +227,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case "quenmk":
             if (isset($_POST['guiemail']) && ($_POST['guiemail'])) {
                 $email = $_POST['email'];
-                $checkemail = checkemail($email);
+                // $checkemail = checkemail($email);
                 if (is_array($checkemail)) {
                     $thongbao = "Mật khẩu của bạn là:" . $checkemail['pass'];
                 } else {

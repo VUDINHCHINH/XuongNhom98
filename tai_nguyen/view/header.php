@@ -34,18 +34,10 @@
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="css/custom.css">
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
-<link rel="stylesheet" type="text/css" href="css/nhom.css">
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.html">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="fashionshop"
-  agent-id="cc8d03b0-72b4-447b-96b5-014cfb489f81"
-  language-code="vi"
-></df-messenger>
 </head>
 <body>
 <div class="se-pre-con"></div>
@@ -76,118 +68,162 @@
       <div class="header-inner">
         <div class="navbar-header">
           <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
-          <a class="navbar-brand page-scroll" href="index.php"> <img alt="Honour" src="images/logo.png"> </a> </div>
+          <a class="navbar-brand page-scroll" href="index.html"> <img alt="Honour" src="images/logo.png"> </a> </div>
         <div class="right-side float-none-sm">
           <div id="menu" class="navbar-collapse collapse left-side" >
             <ul class="nav navbar-nav navbar-left">
-              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">WOMEN</a>
+              <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Women</a>
                 <div class="megamenu mobile-sub-menu">
                   <div class="megamenu-inner-top">
-                    
-                      <?php
-                         foreach ($dsdm as $dm) {
-                        extract($dm);
-                        $linkdm="index.php?act=sanpham&iddm=".$id;
-                        echo '
-                          <ul class="sub-menu-level1">
-                          <li class="level2"> 
-                            <ul class="sub-menu-level2 ">
-                            <li class="level3"><a href="'.$linkdm.'"><span>■</span>'.$name.'</a></li>
-
-                            </ul>    
-                            </li>
-                          </ul>
-                        ';
-                         }?>
-                  
+                    <ul class="sub-menu-level1">
+                      <li class="level2"> <a href="shop.html"><span>Women Clothings</span></a>
+                        <ul class="sub-menu-level2">
+                          <li class="level3"><a href="shop.html"><span>■</span>Dresses</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Sport Jeans</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Skirts</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Tops</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Sleepwear</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Jeans</a></li>
+                        </ul>
+                      </li>
+                      <li class="level2"> <a href="shop.html"><span>Women Fashion</span></a>
+                        <ul class="sub-menu-level2 ">
+                          <li class="level3"><a href="shop.html"><span>■</span>Blazer & Coat</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Sport Shoes</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Phone Cases</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Trousers</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Purse</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Wallets</a></li>
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </li>
-              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">Men</a>
-                <div class="megamenu mobile-sub-menu">
-                  <div class="megamenu-inner-top">
-                    
-                      <?php
-                         foreach ($dsdm as $dm) {
-                        extract($dm);
-                        $linkdm="index.php?act=sanpham&iddm=".$id;
-                        echo '
-                          <ul class="sub-menu-level1">
-                          <li class="level2"> 
+              <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Men</a>
+                <div class="megamenu full mobile-sub-menu">
+                  <div class="container">
+                    <div class="megamenu-inner">
+                      <div class="megamenu-inner-top">
+                        <div class="row">
+                          <div class="col-md-3 level2"> <a href="shop.html"><span>Men Fashion</span></a>
                             <ul class="sub-menu-level2 ">
-                            <li class="level3"><a href="'.$linkdm.'"><span>■</span>'.$name.'</a></li>
-
-                            </ul>    
-                            </li>
-                          </ul>
-                        ';
-                         }?>
-                  
+                              <li class="level3"><a href="shop.html"><span>■</span>Blazer & Coat</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Sport Shoes</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Phone Cases</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Trousers</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Purse</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Wallets</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3 level2"> <a href="shop.html"><span>Juniors kid</span></a>
+                            <ul class="sub-menu-level2 ">
+                              <li class="level3"><a href="shop.html"><span>■</span>Blazer & Coat</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Sport Shoes</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Phone Cases</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Trousers</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Purse</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Wallets</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3 level2"> <a href="shop.html"><span>Men Clothings</span></a>
+                            <ul class="sub-menu-level2 ">
+                              <li class="level3"><a href="shop.html"><span>■</span>Blazer & Coat</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Chinos & Trousers</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Underwear</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Trousers</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Purse</a></li>
+                              <li class="level3"><a href="shop.html"><span>■</span>Wallets</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3 level2 visible-lg visible-md"> <a href="shop.html"> <img src="images/drop_banner.jpg" alt="Honour"> </a> </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="level"> <span class="opener plus"></span> <a href="" class="page-scroll">JUNIORS</a>
-                
+              <li class="level"><a href="shop.html" class="page-scroll">Juniors</a></li>
+              <li class="level"> <span class="opener plus"></span> <a href="shop.html" class="page-scroll">Kids</a>
+                <div class="megamenu mobile-sub-menu">
+                  <div class="megamenu-inner-top">
+                    <ul class="sub-menu-level1">
+                      <li class="level2"> <a href="shop.html"><span>Kids Fashion</span></a>
+                        <ul class="sub-menu-level2 ">
+                          <li class="level3"><a href="shop.html"><span>■</span>Blazer & Coat</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Sport Shoes</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Phone Cases</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Trousers</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Purse</a></li>
+                          <li class="level3"><a href="shop.html"><span>■</span>Wallets</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">KIDS</a>
-    
+              <li class="level"><a href="shop.html" class="page-scroll">Baby</a></li>
+              <li class="level"> <span class="opener plus"></span> <a class="page-scroll">Pages</a>
+                <div class="megamenu mobile-sub-menu">
+                  <div class="megamenu-inner-top">
+                    <ul class="sub-menu-level1">
+                      <li class="level2">
+                        <ul class="sub-menu-level2 ">
+                          <li class="level3"><a href="about.html"><span>■</span>About Us</a></li>
+                          <li class="level3"><a href="account.html"><span>■</span>Account</a></li>
+                          <li class="level3"><a href="checkout.html"><span>■</span>Checkout</a></li>
+                          <li class="level3"><a href="contact.html"><span>■</span>Contact</a></li>
+                          <li class="level3"><a href="404.html"><span>■</span>404 Error</a></li>
+                          <li class="level3"><a href="blog.html"><span>■</span>Blog</a></li>
+                          <li class="level3"><a href="single-blog.html"><span>■</span>Single Blog</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li class="level"> <span class="opener plus"></span> <a href="index.php?act=gioithieu" class="page-scroll">ABOUT</a></li>
-              <li class="level"> <span class="opener plus"></span> <a href="index.php?act=lienhe" class="page-scroll">CONTACT</a></li>
-
             </ul>
           </div>
           <div class="right-side float-left-xs header-right-link">
             <ul>
-               <li class="main-search">
+              <li class="main-search">
                 <div class="header_search_toggle desktop-view">
-                <form action="index.php?act=sanpham" method="post">
+                  <form>
                     <div class="search-box">
-                      <input class="input-text" name="kyw" type="text" placeholder="Search entire store here...">
+                      <input class="input-text" type="text" placeholder="Search entire store here...">
                       <button class="search-btn"></button>
                     </div>
                   </form>
                 </div>
-              </li> 
+              </li>
               <li class="account-icon"> <a href="#"><span></span></a>
                 <div class="header-link-dropdown account-link-dropdown">
                   <ul class="link-dropdown-list">
-                    <?php
-                      // Kiểm tra xem session 'id' có tồn tại và không rỗng hay không
-                      if (!isset($_SESSION['user'])) {
-                        // Nếu không có session 'id', người dùng là khách hàng
-                    ?>
-                    <li> <span class="dropdown-title">Hello </span>
+                    <li> <span class="dropdown-title">Default welcome msg!</span>
                       <ul>
-                        <li><a href="index.php?act=dangnhap">Đăng nhập</a></li>
-                        <li><a href="index.php?act=dangky">Đăng ký</a></li>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Create an Account</a></li>
                       </ul>
-                      <?php
-                       } else {
-                          if ($_SESSION['user']['role'] == 1) { 
-                      ?>
-                      <ul>
-                          <li><a href="index.php?act=edit_taikhoan">Thông tin tài khoản</a></li>
-                          <li><a href="admin/index.php?act=home">Admin</a></li>
-                          <li><a href="index.php?act=thoat">Đăng xuất</a></li>
-                      </ul>
-                      <?php } else { ?>
-                        <ul>
-                          <li><a href="index.php?act=edit_taikhoan">Thông tin tài khoản</a></li>
-                          <li><a href="index.php?act=list_history_order&id_account=<?=$_SESSION['user']['id']?>">Lịch sử đơn hàng</a></li>
-                          <li><a href="index.php?act=thoat">Đăng xuất</a></li>
-                        </ul>
-                      <?php
-                        }
-                      }
-                      ?>
                     </li>
-                    
+                    <li> <span class="dropdown-title">Language :</span>
+                      <ul>
+                        <li><a class="active" href="#">English</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">German</a></li>
+                      </ul>
+                    </li>
+                    <li> <span class="dropdown-title">Currency :</span>
+                      <ul>
+                        <li><a class="active" href="#">USD</a></li>
+                        <li><a href="#">AUD</a></li>
+                        <li><a href="#">EUR</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </li>
-              <li class="cart-icon"> <a href="index.php?act=viewcart"> <span> <small class="cart-notification"><?php (isset($_SESSION['mycart'])) ? $mess = count($_SESSION['mycart']) : $mess = 0; echo $mess;?></small> </span> </a>
-                <!-- <div class="cart-dropdown header-link-dropdown">
+              <li class="cart-icon"> <a href="#"> <span> <small class="cart-notification">2</small> </span> </a>
+                <div class="cart-dropdown header-link-dropdown">
                   <ul class="cart-list link-dropdown-list">
                     <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
                       <div class="media"> <a class="pull-left"> <img alt="Minimo" src="images/1.jpg"></a>
@@ -218,13 +254,20 @@
                   </ul>
                   <p class="cart-sub-totle"> <span class="pull-left">Cart Subtotal</span> <span class="pull-right"><strong class="price-box">$29.98</strong></span> </p>
                   <div class="clearfix"></div>
-                  <div class="mt-20"> <a href="index.php?act=addtocart" class="btn-color btn">Cart</a> <a href="index.php?act=bill" class="btn-color btn right-side">Checkout</a> </div>
-                </div> -->
+                  <div class="mt-20"> <a href="cart.html" class="btn-color btn">Cart</a> <a href="checkout.html" class="btn-color btn right-side">Checkout</a> </div>
+                </div>
               </li>
             </ul>
           </div>
         </div>
-        
+        <div class="header_search_toggle mobile-view">
+          <form>
+            <div class="search-box">
+              <input class="input-text" type="text" placeholder="Search entire store here...">
+              <button class="search-btn"></button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </header>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/style.css">
 <body>
     <div class="boxcenter">
     <div class="row2">
@@ -31,4 +31,4 @@
         </div>
        
 </body>
-</html>
+</html> -->

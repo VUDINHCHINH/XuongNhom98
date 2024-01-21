@@ -1,19 +1,4 @@
-  <!-- BANNER STRAT -->
-  <div class="banner inner-banner align-center">
-    <div class="container">
-      <section class="banner-detail">
-        <h1 class="banner-title">Contact Us</h1>
-        <div class="bread-crumb mt-30">
-          <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><span>Contact</span></li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </div>
-  <!-- BANNER END -->
-<!-- CONTAIN START ptb-95-->
+  <!-- CONTAIN START ptb-95-->
   <section class="pt-95">
     <div class="container">
       <div class="row">
