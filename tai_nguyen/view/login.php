@@ -1,5 +1,21 @@
- <!-- CONTAIN START -->
- <section class="checkout-section ptb-95">
+<!-- BANNER STRAT -->
+<div class="banner inner-banner align-center">
+    <div class="container">
+      <section class="banner-detail">
+        <h1 class="banner-title">Login</h1>
+        <div class="bread-crumb mt-30">
+          <ul>
+            <li><a href="index.html">Home</a>/</li>
+            <li><span>Login</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- BANNER END --> 
+  
+  <!-- CONTAIN START -->
+  <section class="checkout-section ptb-95">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
